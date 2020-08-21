@@ -53,6 +53,7 @@ var arraySum = function (array) {
 
 // 4. Check if a number is even.
 var isEven = function (n) {
+  // basecase
   // if n is a negative number
   if (n < 0) {
     // make n the absolute value of a number
@@ -67,9 +68,10 @@ var isEven = function (n) {
     // return false
     return false;
     // else use recursive function, n minus 2 until either 1 or 0
-  } else {
-    return isEven(n - 2);
   }
+
+  // recursive case
+  return isEven(n - 2);
 };
 
 // 5. Sum all integers below a given integer.
