@@ -98,7 +98,12 @@ var sumBelow = function (n) {
 
 // 6. Get the integers within a range (x, y).
 // range(2,9); // [3,4,5,6,7,8]
-var range = function (x, y) {};
+var range = function (x, y) {
+  // basecase
+
+  return range(x);
+  // recursive case
+};
 
 // 7. Compute the exponent of a number.
 // The exponent of a number says how many times the base number is used as a factor.
