@@ -76,13 +76,21 @@ var isEven = function (n) {
 // sumBelow(10); // 45
 // sumBelow(7); // 21
 var sumBelow = function (n) {
+  // basecase
+  // if n equals 0, return 0
   if (n === 0) {
     return 0;
+
+    // else if n is less than 0, n equals n plus 1
   } else if (n < 0) {
     n = n + 1;
+
+    // else if n is greater than 0, n equals n minus 1
   } else if (n > 0) {
     n = n - 1;
   }
+
+  // recursive case
   return n + sumBelow(n);
 };
 
